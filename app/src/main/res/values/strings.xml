@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">BasicActivity</string>
     <string name="kirim">Kirim</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="dialog">Dialog</string>
+    <string name="signin">Sign In</string>
+    <string name="cancel">Cancel</string>
 </resources>

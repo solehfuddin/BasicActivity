@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
             kirimPesan(txtPesan.text.toString())
         }
 
+        btnDialog.setOnClickListener {
+            tampilDialog()
+        }
+
         Log.i("On Create", "Running On Create")
     }
 
@@ -46,6 +50,11 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.i("On Destroy", "Running On Destroy")
+    }
+
+    fun tampilDialog() {
+        val dialog = TestDialog();
+        dialog.show(supportFragmentManager, "Sign In")
     }
 
     fun kirimPesan(isipesan : String) {
